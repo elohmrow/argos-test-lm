@@ -1,0 +1,52 @@
+~/argos/light-modules\-> mgnl create-light-module argos-test-lm
+info Using configuration at /usr/local/lib/node_modules/@magnolia/cli/lib/config/mgnl-cli.json
+info Using prototypes at /usr/local/lib/node_modules/@magnolia/cli/lib/config/mgnl-cli-prototypes
+info 'No path option provided, light module will be created in the current folder.'
+info Resource folder /Users/bandersen/argos/light-modules/argos-test-lm created.
+info Resource folder /Users/bandersen/argos/light-modules/argos-test-lm/dialogs/components created.
+info Resource folder /Users/bandersen/argos/light-modules/argos-test-lm/dialogs/pages created.
+info Resource folder /Users/bandersen/argos/light-modules/argos-test-lm/templates/components created.
+info Resource folder /Users/bandersen/argos/light-modules/argos-test-lm/templates/pages created.
+info Resource folder /Users/bandersen/argos/light-modules/argos-test-lm/webresources/css created.
+info Resource folder /Users/bandersen/argos/light-modules/argos-test-lm/webresources/js created.
+info Resource folder /Users/bandersen/argos/light-modules/argos-test-lm/decorations created.
+info Resource folder /Users/bandersen/argos/light-modules/argos-test-lm/i18n created.
+info /Users/bandersen/argos/light-modules/argos-test-lm/README.md created
+info Module argos-test-lm created at /Users/bandersen/argos/light-modules/argos-test-lm
+  4     [@cms.page /]
+info Success! In order to add a page, run mgnl create-page $YOUR_PAGE_NAME -p /Users/bandersen/argos/light-modules/argos-test-lm
+~/argos/light-modules\-> cd argos-test-lm/
+~/argos/light-modules/argos-test-lm\-> mgnl-create-page argos-test-page
+-bash: mgnl-create-page: command not found
+~/argos/light-modules/argos-test-lm\-> mgnl create-page argos-test-page
+info No path option provided, page template will be created in the current folder.
+info /Users/bandersen/argos/light-modules/argos-test-lm/templates/pages/argos-test-page.yaml created
+info /Users/bandersen/argos/light-modules/argos-test-lm/templates/pages/argos-test-page.ftl created
+info /Users/bandersen/argos/light-modules/argos-test-lm/dialogs/pages/argos-test-page.yaml created
+info Page template created
+~/argos/light-modules/argos-test-lm\-> mgnl help create-component
+
+  Usage: mgnl create-component <name> [options]
+
+  Creates a component. Optionally makes it available (or autogenerate) to a given area of a page of the current module (or the module defined by the -p option). E.g. mgnl create-component foo --available myHome@main -p /path/to/module
+
+
+  Options:
+
+    -V, --version                             output the version number
+    -a, --available <path-to-page[@area]>     The target page and area to make the component available. If no area is specified it defaults to "main"
+    -g, --autogenerate <path-to-page[@area]>  The target page and area to have the autogenerate component. If no area is specified it defaults to "main"
+    -p, --path <path>                         The path to a light module. If no path is provided, then the current folder is assumed to be a light module and the component will be tentatively created there.
+    -h, --help                                output usage information
+~/argos/light-modules/argos-test-lm\-> mgnl create-component argostestcomponent --available argos-test-page@main
+info Using configuration at /usr/local/lib/node_modules/@magnolia/cli/lib/config/mgnl-cli.json
+info Using prototypes at /usr/local/lib/node_modules/@magnolia/cli/lib/config/mgnl-cli-prototypes
+info No path option provided, component will be created relative to the current folder.
+info Component created
+info /Users/bandersen/argos/light-modules/argos-test-lm/templates/components/argostestcomponent.yaml created
+info /Users/bandersen/argos/light-modules/argos-test-lm/templates/components/argostestcomponent.ftl created
+info /Users/bandersen/argos/light-modules/argos-test-lm/dialogs/components/argostestcomponent.yaml created
+info Created new area main at the end of /Users/bandersen/argos/light-modules/argos-test-lm/templates/pages/argos-test-page.ftl
+info Availability for argos-test-lm:components/argostestcomponent added into /Users/bandersen/argos/light-modules/argos-test-lm/templates/pages/argos-test-page.yaml
+~/argos/light-modules/argos-test-lm\-> vi templates/pages/argos-test-page.ftl
+~/argos/light-modules/argos-test-lm\->

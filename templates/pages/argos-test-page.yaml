@@ -1,0 +1,11 @@
+title: argos-test-page
+templateScript: /argos-test-lm/templates/pages/argos-test-page.ftl
+renderType: freemarker
+dialog: argos-test-lm:pages/argos-test-page
+visible: true
+
+areas:
+  main:
+    availableComponents:
+      argostestcomponent:
+        id: argos-test-lm:components/argostestcomponent

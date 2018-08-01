@@ -1,0 +1,4 @@
+title: argostestcomponent
+renderType: freemarker
+templateScript: /argos-test-lm/templates/components/argostestcomponent.ftl
+dialog: argos-test-lm:components/argostestcomponent
