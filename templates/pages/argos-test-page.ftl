@@ -30,7 +30,7 @@
     <div class="container ">
       <h1>argos-test-page works!</h1>
     </div>
-
+here is some new text i made locally ... does it show up on the publics?
 [@cms.area name="main"/]
     [#-- use resfn to load all js which matches the globbing pattern or link resources manually or via theme --]
     [#-- ${resfn.js(["/argos-test-lm/.*js"])!} --]
