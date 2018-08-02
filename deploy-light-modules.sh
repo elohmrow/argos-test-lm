@@ -7,3 +7,5 @@ do
     # of course could parameterize any of this:
     scp -P 1978 -r . bandersen@$publicInstance:/home/bandersen/argos/light-modules
 done
+# make sure you have keys on these machines for passwordless ssh
+# could make this a script on fs instead of pasting here
